@@ -1,9 +1,9 @@
-import React, { FC, ComponentProps } from "react";
-import cc from "classnames";
-import { Tooltip } from "antd";
-import "./index.less";
+import React, { FC, ComponentProps } from 'react';
+import cc from 'classnames';
+import { Tooltip } from 'antd';
+import './index.less';
 
-export interface TextProps extends Omit<ComponentProps<"div">, "onClick"> {
+export interface TextProps extends Omit<ComponentProps<'div'>, 'onClick'> {
   title?: string;
   tipText?: string;
   count?: number | string;
@@ -12,8 +12,8 @@ export interface TextProps extends Omit<ComponentProps<"div">, "onClick"> {
   countColor?: string;
   icon?: React.ReactNode;
   color?: string;
-  iconShape?: "round" | "circle";
-  theme?: "default" | "s1" | "s2" | "s3" | "s4";
+  iconShape?: 'round' | 'circle';
+  theme?: 'default' | 's1' | 's2' | 's3' | 's4';
   bgGradient?: boolean;
 }
 
@@ -26,24 +26,24 @@ export const DashboardCard: FC<TextProps> = ({
   countUnit,
   countColor,
   icon,
-  color = "#59a6e5",
+  color = '#59a6e5',
   style,
-  theme = "default",
-  iconShape = "round",
+  theme = 'default',
+  iconShape = 'round',
   bgGradient = false,
   ...rest
 }) => {
   const cardTheme = {
-    "dashboard-theme-default": theme === "default",
-    "dashboard-theme-s1": theme === "s1",
-    "dashboard-theme-s2": theme === "s2",
-    "dashboard-theme-s3": theme === "s3",
-    "dashboard-theme-s4": theme === "s4",
+    'dashboard-theme-default': theme === 'default',
+    'dashboard-theme-s1': theme === 's1',
+    'dashboard-theme-s2': theme === 's2',
+    'dashboard-theme-s3': theme === 's3',
+    'dashboard-theme-s4': theme === 's4',
   };
 
   const hexToRgba = (hexColor: string, alpha: number = 0.5) => {
     // 移除 # 号并提取颜色值
-    const hex = hexColor.replace("#", "");
+    const hex = hexColor.replace('#', '');
 
     // 将颜色值拆分成 R、G、B 三个部分
     const r = parseInt(hex.substring(0, 2), 16);
@@ -59,12 +59,12 @@ export const DashboardCard: FC<TextProps> = ({
   let iconColor = color;
   let bgColor = color;
   // iconStyle
-  const iconStyle: any = { background: "inherit" };
-  if (theme === "default" || theme === "s2") {
+  const iconStyle: any = { background: 'inherit' };
+  if (theme === 'default' || theme === 's2') {
     iconStyle.background = iconColor;
     bgColor = hexToRgba(iconColor, 0.15);
   }
-  if (theme === "s3" || theme === "s4") {
+  if (theme === 's3' || theme === 's4') {
     iconStyle.background = hexToRgba(color, 0.2);
     iconStyle.color = iconColor;
 
@@ -72,38 +72,32 @@ export const DashboardCard: FC<TextProps> = ({
   }
   // bgColor
   const bgStyle: any = { background: bgColor };
-  if (theme === "s4") {
+  if (theme === 's4') {
     bgStyle.background = hexToRgba(color, 0.2);
     bgStyle.borderLeft = `4px solid ${color}`;
   }
-  if (theme !== "s4" && bgGradient) {
+  if (theme !== 's4' && bgGradient) {
     const rgbaColor = hexToRgba(color, 0.8);
     delete bgStyle.background;
     bgStyle.backgroundImage = `linear-gradient(to right, ${rgbaColor} ,${bgColor})`;
   }
 
-  let combinedClassName = "tntx-dashboard-card";
+  let combinedClassName = 'tntx-dashboard-card';
   if (className) {
     combinedClassName += ` ${className}`;
   }
   if (cardTheme) {
-    combinedClassName += ` ${Object.values(cardTheme).join(" ")}`;
+    combinedClassName += ` ${Object.values(cardTheme).join(' ')}`;
   }
 
   return (
-    <div
-      className={cc(["tntx-dashboard-card", className, { ...cardTheme }])}
-      {...rest}
-    >
-      {(theme === "default" ||
-        theme === "s1" ||
-        theme === "s3" ||
-        theme === "s4") && (
+    <div className={cc(['tntx-dashboard-card', className, { ...cardTheme }])} {...rest}>
+      {(theme === 'default' || theme === 's1' || theme === 's3' || theme === 's4') && (
         <div className="main-wrap" style={bgStyle}>
           {icon && (
             <div className={`icon-wrap ${iconShape}`} style={iconStyle}>
               {icon}
-              {theme === "s3" && <span className="line"></span>}
+              {theme === 's3' && <span className="line"></span>}
             </div>
           )}
           <div className="content-wrap">
@@ -121,7 +115,7 @@ export const DashboardCard: FC<TextProps> = ({
           </div>
         </div>
       )}
-      {theme === "s2" && (
+      {theme === 's2' && (
         <div className="main-wrap" style={bgStyle}>
           <div className="title">
             <h4>{title}</h4>
@@ -147,6 +141,6 @@ export const DashboardCard: FC<TextProps> = ({
   );
 };
 
-DashboardCard.displayName = "DashboardCard";
+DashboardCard.displayName = 'DashboardCard';
 
 export default DashboardCard;
