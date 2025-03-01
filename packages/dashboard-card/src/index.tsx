@@ -1,7 +1,7 @@
 import React, { FC, ComponentProps } from 'react';
 import cc from 'classnames';
-import { Tooltip } from 'antd';
-import './index.less';
+// import './index.less';
+import './index.css';
 
 export interface TextProps extends Omit<ComponentProps<'div'>, 'onClick'> {
   title?: string;

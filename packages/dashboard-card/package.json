@@ -1,34 +1,34 @@
 {
-  "name": "@tntx/dashboard-card-react",
-  "version": "1.0.2",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsup"
-  },
-  "keywords": [
-    "tnt",
-    "tntd",
-    "tntx",
-    "dashboard",
-    "dashboard-card"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tntd/dashboard-card-react.git"
-  },
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "dependencies": {
-    "antd": "5",
-    "classnames": "^2.5.1"
-  },
-  "peerDependencies": {
-    "antd": ">=4.0.0",
-    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
-  }
+    "name": "@tntx/dashboard-card-react",
+    "version": "1.0.2",
+    "type": "module",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsup"
+    },
+    "keywords": [
+        "tnt",
+        "tntd",
+        "tntx",
+        "dashboard",
+        "dashboard-card"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tntd/dashboard-card-react.git"
+    },
+    "license": "MIT",
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "antd": "5",
+        "classnames": "^2.5.1"
+    },
+    "peerDependencies": {
+        "antd": ">=4.0.0",
+        "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+        "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+    }
 }

@@ -9,7 +9,7 @@ export interface RiskRateProps extends Omit<ComponentProps<'div'>, 'onClick'> {
   color?: string;
   count?: number | string;
   text?: string;
-  width?: string;
+  width?: string | number;
 }
 
 export const RiskRate: FC<RiskRateProps> = ({
@@ -28,7 +28,7 @@ export const RiskRate: FC<RiskRateProps> = ({
     warning: '#faad14',
   };
 
-  if (['success', 'error', 'default', 'processing', 'warning'].indexOf(status) > -1) {
+  if (!color && ['success', 'error', 'default', 'processing', 'warning'].indexOf(status) > -1) {
     color = statusMap[status];
   }
 
