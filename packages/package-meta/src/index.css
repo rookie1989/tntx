@@ -1,0 +1,165 @@
+/* src/index.less */
+.tntx-package-meta .tntx-package-meta-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  height: 40px;
+}
+.tntx-package-meta .tntx-package-meta-header h2 {
+  line-height: 1;
+  font-size: 22px;
+  margin: 0;
+  font-weight: bold;
+}
+.tntx-package-meta .tntx-package-meta-header .link-info {
+  text-align: right;
+  color: #f55d00;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.tntx-package-meta .tntx-package-meta-header .link-info:hover {
+  color: #126BFB;
+  text-decoration: none;
+}
+.tntx-package-meta .tntx-package-meta-header .link-info .link-info-icon {
+  margin-right: 8px;
+}
+.tntx-package-meta .tntx-package-meta-header .link-info span {
+  font-size: 16px;
+}
+.tntx-package-meta .tntx-package-meta-body {
+  display: flex;
+  background: #F8F9FA;
+  border-radius: 3px;
+  padding: 20px 16px;
+  border-left: 3px solid #FDC429;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.07);
+}
+.tntx-package-meta .tntx-package-meta-body .package-meta-body-content {
+  flex: 1;
+  display: flex;
+}
+.tntx-package-meta .tntx-package-meta-body .package-meta-body-content .avatar {
+  width: 40px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.tntx-package-meta .tntx-package-meta-body .package-meta-body-content .avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+}
+.tntx-package-meta .tntx-package-meta-body .package-meta-body-content .info {
+  position: relative;
+  flex: 1;
+}
+.tntx-package-meta .tntx-package-meta-body .package-meta-body-content .info .info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.tntx-package-meta .tntx-package-meta-body .package-meta-body-content .info h4 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 6px;
+  margin-top: 0;
+  font-weight: bold;
+}
+.tntx-package-meta .tntx-package-meta-body .package-meta-body-content .info p {
+  font-size: 14px;
+  color: #333;
+  margin-top: 0;
+}
+.tntx-package-meta .tntx-package-meta-body .package-meta-body-content .info p:last-child {
+  margin-bottom: 0;
+}
+.tntx-package-meta-use-table {
+  font-size: 11px;
+  color: #333333;
+  border-width: 1px;
+  border-color: #ccd3e1;
+  border-collapse: collapse;
+}
+.tntx-package-meta-use-table th {
+  min-width: 160px;
+  border-width: 1px;
+  padding: 6px 8px;
+  border-style: solid;
+  border-color: #ccd3e1;
+  background-color: #e5f2ff;
+}
+.tntx-package-meta-use-table td {
+  border-width: 1px;
+  padding: 6px 8px;
+  border-style: solid;
+  border-color: #ccd3e1;
+  background-color: #ffffff;
+}
+
+/* src/Extra/index.less */
+.tntx-package-meta .package-meta-body-extra {
+  display: flex;
+}
+.tntx-package-meta .package-meta-body-extra .extra-git-tag-list {
+  display: flex;
+}
+.tntx-package-meta .package-meta-body-extra .extra-git-tag-list .git-tag {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.tntx-package-meta .package-meta-body-extra .extra-git-tag-list .git-tag:last-child {
+  margin-right: 0;
+}
+.tntx-package-meta .package-meta-body-extra .extra-git-tag-list .git-tag span,
+.tntx-package-meta .package-meta-body-extra .extra-git-tag-list .git-tag em {
+  display: inline-block;
+  padding: 0 10px;
+}
+.tntx-package-meta .package-meta-body-extra .extra-git-tag-list .git-tag span {
+  background: #555;
+  color: #fff;
+  border-radius: 2px 0 0 2px;
+  padding: 0 10px;
+}
+.tntx-package-meta .package-meta-body-extra .extra-git-tag-list .git-tag em {
+  background: #46cc10;
+  color: #fff;
+  border-radius: 0 2px 2px 0;
+  padding: 0 6px;
+  font-style: normal;
+}
+.tntx-package-meta .package-meta-body-extra .extra-git-tag-list .git-tag em.red {
+  background: #EF6555;
+}
+.tntx-package-meta .package-meta-body-extra .extra-git-tag-list .git-tag em.yellow {
+  background: #F7B035;
+}
+.tntx-package-meta .package-meta-body-extra .extra-git-tag-list .git-tag em.green {
+  background: #46cc10;
+}
+.tntx-package-meta .package-meta-body-extra .extra-link-list {
+  display: flex;
+  margin-left: 20px;
+}
+.tntx-package-meta .package-meta-body-extra .extra-link-list .link-icon {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+}
+.tntx-package-meta .package-meta-body-extra .extra-link-list .link-icon:last-child {
+  margin-right: 0;
+}
+.tntx-package-meta .package-meta-body-extra .extra-link-list .link-icon img {
+  width: 20px;
+  height: 20px;
+}
