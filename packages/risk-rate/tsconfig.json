@@ -2,8 +2,8 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "dist",
-    // "rootDir": "./src",
-    "types": ["react", "react-dom"], // 确保包含 react 类型
+    // "rootDir": "./src", // 显式设置组件的根目录
+    "types": ["react", "react-dom"],
     "skipLibCheck": true,
     "jsx": "react-jsx"
   },
