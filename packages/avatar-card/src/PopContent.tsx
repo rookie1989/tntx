@@ -17,6 +17,7 @@ interface PopContentProps {
   empStatus?: number;
   theme?: string;
 }
+
 export default (props: any) => {
   const {
     sameAsChildren,
@@ -45,10 +46,12 @@ export default (props: any) => {
         <div
           className="popover-content-header-wave"
           style={{
-            backgroundImage: 'url(' + selectImages[colorIndex] + ')',
+            backgroundImage: `url(${selectImages[colorIndex]})`,
             filter: empStatus === 2 ? 'grayscale(1)' : undefined,
           }}
-        />
+        >
+          <img src={selectImages[colorIndex]} />
+        </div>
       </div>
       <div className="popover-content-info">
         <div
