@@ -14,10 +14,12 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
-    // "rootDir": "src",
+    "rootDir": ".", // 显式设置根目录
     "baseUrl": ".", // 基础路径
     "paths": {
       "@tntx/*": ["packages/*/src"] // 配置路径别名
     }
-  }
+  },
+  "include": ["packages/**/*.ts", "packages/**/*.tsx"], // 包含所有组件的文件
+  "exclude": ["node_modules", "dist"] // 排除 node_modules 和 dist 目录
 }
