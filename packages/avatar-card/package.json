@@ -1,10 +1,10 @@
 {
-    "name": "@tntx/package-meta-react",
-    "version": "1.0.6",
+    "name": "@tntx/avatar-card-react",
+    "version": "1.0.1",
     "type": "module",
     "module": "dist/index.js",
     "types": "dist/index.d.ts",
-    "description": "组件元数据",
+    "description": "头像卡片组件",
     "scripts": {
         "build": "tsup"
     },
@@ -12,12 +12,12 @@
         "tnt",
         "tntd",
         "tntx",
-        "risk",
-        "risk-rate"
+        "avatar",
+        "avatar-card"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/rookie1989/tntx/tree/main/packages/package-meta"
+        "url": "https://github.com/rookie1989/tntx/tree/main/packages/avatar-card"
     },
     "license": "MIT",
     "files": [
