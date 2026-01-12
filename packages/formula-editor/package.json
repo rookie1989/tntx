@@ -1,10 +1,10 @@
 {
-    "name": "@tntx/markdown-preview-react",
-    "version": "1.0.2",
+    "name": "@tntx/formula-editor-react",
+    "version": "1.0.0",
     "type": "module",
     "module": "dist/index.js",
     "types": "dist/index.d.ts",
-    "description": "markdown 预览组件",
+    "description": "计算公式编辑器",
     "scripts": {
         "build": "tsup"
     },
@@ -12,11 +12,12 @@
         "tnt",
         "tntd",
         "tntx",
-        "markdown-preview"
+        "formula-editor",
+        "formula-editor-react"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/rookie1989/tntx/tree/main/packages/markdown-preview-react"
+        "url": "https://github.com/rookie1989/tntx/tree/main/packages/formula-editor"
     },
     "license": "MIT",
     "files": [
@@ -24,11 +25,10 @@
     ],
     "dependencies": {
         "classnames": "^2.5.1",
-        "highlight.js": "^11.11.1",
-        "react-markdown": "^10.1.0",
-        "rehype-highlight": "^7.0.2",
-        "rehype-raw": "^7.0.0",
-        "remark-gfm": "^4.0.1"
+        "codemirror": "^6.0.1",
+        "intersection-observer": "^0.12.2",
+        "js-beautify": "^1.15.4",
+        "universal-cookie": "^7.2.2"
     },
     "peerDependencies": {
         "antd": ">=4.0.0",

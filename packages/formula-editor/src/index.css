@@ -1,0 +1,31 @@
+/* src/RiskRate/index.less */
+.tntx-risk-rate {
+    padding: 2px 10px;
+    border: 1px solid #126BFB;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    min-width: 80px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tntx-risk-rate .tntx-risk-rate-score {
+    display: inline-block;
+    padding: 0 3px;
+    position: relative;
+    min-width: 22px;
+    height: 22px;
+    line-height: 22px;
+    left: -8px;
+    text-align: center;
+    border-radius: 11px;
+    background-color: #126BFB;
+    color: #fff;
+}
+
+.tntx-risk-rate .tntx-risk-rate-text {
+    color: #126BFB;
+}
