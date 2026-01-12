@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React, { useEffect, useState, useRef, forwardRef, useCallback, useMemo } from 'react';
 // @ts-ignore
-import * as CodeMirror from 'codemirror/lib/codemirror';
+import * as CodeMirror from 'codemirror';
 // @ts-ignore
 import { js_beautify as beautify_js } from 'js-beautify';
 import 'codemirror/mode/groovy/groovy';

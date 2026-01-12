@@ -1,16 +1,25 @@
-import RiskRate from './index';
-import { Space } from 'antd';
+import FormulaEdit from './FormulaEdit';
 
 export default {
-  title: 'RiskRate',
-  component: RiskRate,
+  title: 'FormulaEdit',
+  component: FormulaEdit,
 };
 
 export const Default = () => {
   return (
-    <Space>
-      <RiskRate color="#f00" text="安全等级" count={98} width={120} />
-      <RiskRate status="success" text="风险评估" count={98} />
-    </Space>
+    <FormulaEdit
+      value=""
+      fieldList={[
+        { name: '字段1', value: 'field1' },
+        { name: '字段2', value: 'field2' },
+      ]}
+      methodList={[
+        { name: '方法1', realValue: 'method1' },
+        { name: '方法2', realValue: 'method2' },
+      ]}
+      onChange={(enCode, data) => {
+        console.log('onChange', enCode, data);
+      }}
+    />
   );
 };

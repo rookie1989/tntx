@@ -1,5 +1,5 @@
 // @ts-ignore
-import * as CodeMirror from 'codemirror/lib/codemirror';
+import * as CodeMirror from 'codemirror';
 
 function defineScript(
   mode: string,
